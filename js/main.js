@@ -1,4 +1,4 @@
-var $doc = $('html, body');
+var $doc = $('document');
 $('.header_menu ul li a').click(function() {
     $doc.animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
