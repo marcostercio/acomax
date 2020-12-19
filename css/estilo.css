@@ -1,0 +1,296 @@
+
+/*Inicio do conteudo*/
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+header{
+width:100%;	
+background:#bb4f2c;
+position: fixed;
+z-index: 1000;
+margin-top: -70px;
+display: table;
+
+}
+img{
+	max-width: 100%;
+
+}
+
+
+/*Conteudo h2 e portfolio h2*/
+.h2conteudo, .portfolio h2{
+	font-size:24px;
+	line-height: 30px;
+	font:Arial;
+	text-transform: uppercase;
+	letter-spacing: .1em; 
+	text-align: center;
+	color:#010066;
+	font-weight: bold;
+}
+
+.h2conteudo:after, .portfolio h2:after{
+	margin:0 auto;
+	margin-top:12px; 
+	content:"";
+	display:block;
+	width:60px;
+	height:3px;
+	background: #010066;
+	margin-bottom:40px;
+
+}
+
+p{
+	font-family:Georgia,"Time new roman",serif;
+	font-size:18px;
+	line-height:25px;
+}
+
+/*header*/
+
+.header_menu ul{
+	text-align: right;
+	padding-top:30;
+	margin-top:24px;
+	background: #bb4f2c;
+	height:46px;
+
+
+}
+.header_menu ul li{
+	display:inline;
+	padding:30;
+	margin-left: 14px;
+
+	
+}
+.header_menu ul li a{
+	text-decoration: none;
+	font-family:arial narrow, verdana;
+	text-transform:uppercase;
+	color:#fff;
+	letter-spacing:.1em; 
+	font-size:14px;
+	font-weight: bold;
+	transition: all .5s ease;
+}
+.header_menu li a:hover{
+	color:#010066;
+}
+
+/*Introdução*/
+.introducao{
+	height:375px;
+	width:100%;
+	background:url(../imagens/acomax_bg.png) no-repeat left top #2a2a2a;
+	background-position: 50% ; 
+	z-index: -1000;
+	padding-top: 30px;
+	margin-top: 70px;
+}
+
+.redessociais{
+	text-align: right;
+	margin-right:-20px;
+	position: relative;
+	right:-10px;
+	
+}
+.redessociais li{
+	display: inline-block;
+	border:3px solid #fff;
+	border-radius: 200%;
+	padding:10px 0 10px 0;
+	margin-left:15px;
+	transition: all .5s ease;
+
+	
+}
+.redessociais li:hover{
+	border-color:#bb4f2c;
+	cursor:pointer;
+}
+.redessociais li:last-child {
+  padding-right:7px;
+  padding-left:7px;
+} 
+.redessociais  li a{
+	padding:10px;	
+}
+
+/*Conteudo*/
+.conteudo{
+	padding-top:60px;
+	display:table;
+
+}
+
+/*Serviços lista*/
+.servicos_lista li{
+	background: #c2512c;
+	margin-top: 20px;
+	
+}
+.servicos_lista p{
+	font-family:Arial;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	line-height: 30px;
+	color:#fff;
+	height: 80px;
+	padding-top: 16px;
+
+	
+}
+
+
+.servicos_lista-img{
+height:204px;
+background:#ccc;
+}
+.servicos_lista-img img{
+	min-height: 204px;
+}
+/*Quebra*/
+.quebra{
+	
+	padding-top:60px;
+	padding-bottom:60px;
+	background: #d4d2da;
+	margin-top: 60px;
+	height:325px;
+	width: 100%; 
+	display: table;
+
+	
+	
+}
+.quebra h2, .informacoesh2{
+	font-size:24px;
+	line-height: 30px;
+	font:Arial;
+	text-transform: uppercase;
+	letter-spacing: .1em; 
+	text-align: left;
+	color:#010066;
+	font-weight: bold;
+}
+.quebra h2:after, .informacoesh2:after{
+	margin-top:12px; 
+	content:"";
+	display:block;
+	width:60px;
+	height:3px;
+	background: #010066;
+	margin-bottom:40px;
+	
+
+}
+.quebra p {
+	color:#010066;
+}
+
+/*Portfolio*/
+.portfolio{
+	padding-top:60px;
+
+}
+.portfolio li{
+	height:200px;
+	background:#ccc;
+	margin-top: 45px;
+	margin-bottom: 45px;
+
+	
+}
+.portfolio_img li a img{
+height:200px;
+width: 100%;
+}
+/*footer*/
+.rodape{
+	clear: both;
+	background:#d4d2da;
+	width: 100%;
+	display: table;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	color:#010066;
+	
+}
+ .rodape a{
+text-decoration:none;
+color:#010066;
+}
+.rodape p > a:hover{
+color:#fff;
+}
+.informacoes p{
+	font-family:arial;
+	text-size:24px;
+}
+.footer_bar{
+	clear:both;
+	height:64px;
+	background:#c2512c;
+	color:#fff;
+	font-family:Arial;
+	font-size: 14px;
+	line-height: 25px;
+	padding-top:20px;
+
+
+
+}
+/*animação*/
+
+.js .introducao img, .js .introducao li, .js .animar{
+opacity: 0;
+}
+.fade{
+	opacity: 0;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+

@@ -1,0 +1,40 @@
+/*Tablet ajustes*/
+@media only screen and (min-width:768px) and (max-width:959px){
+
+	.header_menu ul{
+		
+	}
+	.header_menu ul li{
+		display:inline;
+		padding:30;
+	
+		
+	}
+}
+
+
+/*Celular ajustes*/
+
+@media only screen and (max-width:767px){
+.header_menu ul li{
+		display:inline;
+		
+		margin-left:0;
+		
+		
+	}
+	.redessociais{
+	text-align: left;
+	margin-top: 30px;
+	position:unset;
+}
+.redessociais li:first-child{
+	margin:0;
+}
+	.header_menu ul li a{
+		font-size: 11px;
+}
+.introducao{
+	background:url(../imagens/acomax_bg_mobile.png) no-repeat center top #2a2a2a;
+	background-position: 40%;
+}
